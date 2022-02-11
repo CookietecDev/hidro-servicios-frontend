@@ -14,6 +14,8 @@ import {
   DrawerMenu,
 } from "./style";
 import OptionMenu from "../../elements/OptionMenu";
+import logo_hidro from "../../../assets/images/logo_hidro.svg";
+import Image from "next/image";
 
 const Menu = (props) => {
   const { window } = props;
@@ -32,7 +34,7 @@ const Menu = (props) => {
           <Hidden mdDown>
             <Container>
               <ContainerLogo>
-                <TextItems>Logo</TextItems>
+                <Image src={logo_hidro} height={80} width={300} />
               </ContainerLogo>
               <ContainerItems>
                 <TextItems>Producto</TextItems>

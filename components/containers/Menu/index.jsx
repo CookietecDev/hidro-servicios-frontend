@@ -11,9 +11,20 @@ import {
   ContainerLogo,
   ContainerButton,
   Line,
+  DrawerMenu,
 } from "./style";
+import OptionMenu from "../../elements/OptionMenu";
 
-const Menu = () => {
+const Menu = (props) => {
+  const { window } = props;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
   return (
     <Box sx={{ flexGrow: 1 }}>
       <MenuBar position="relative">
@@ -39,12 +50,27 @@ const Menu = () => {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
+              onClick={handleDrawerToggle}
             >
               <MenuIcon />
             </ContainerButton>
           </Hidden>
         </Toolbar>
       </MenuBar>
+      <Box component="nav">
+        <DrawerMenu
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true,
+          }}
+          anchor="right"
+        >
+          <OptionMenu onClick={handleDrawerToggle} close={handleDrawerToggle} />
+        </DrawerMenu>
+      </Box>
     </Box>
   );
 };

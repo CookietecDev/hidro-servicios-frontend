@@ -1,4 +1,4 @@
-import { AppBar, IconButton } from "@mui/material";
+import { AppBar, Drawer, IconButton } from "@mui/material";
 import { styled as styledM } from "@mui/material/styles";
 import styled from "styled-components";
 
@@ -12,10 +12,19 @@ export const ContainerButton = styledM(IconButton)(() => ({
   right: "1px",
 }));
 
+export const DrawerMenu = styledM(Drawer)(() => ({
+  width: 240,
+  margin: 0,
+  "& .MuiDrawer-paper": {
+    boxSizing: "border-box",
+    width: 240,
+  },
+}));
+
 export const TextItems = styled.p`
-  font-family: Red Hat Display;
   color: #2f5597;
   font-weight: bold;
+  margin: 0px 30px;
 
   &:hover {
     cursor: pointer;
@@ -31,7 +40,6 @@ export const Container = styled.div`
 export const ContainerItems = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100%;
   align-items: center;
 `;
 

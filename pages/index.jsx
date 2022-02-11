@@ -1,5 +1,5 @@
 import React from "react";
-import Menu from "../components/elements/Menu";
+import Menu from "../components/containers/Menu";
 
 const Home = () => {
   return <Menu />;

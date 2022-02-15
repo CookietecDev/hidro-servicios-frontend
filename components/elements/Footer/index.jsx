@@ -5,45 +5,43 @@ import {
   ContainerContact,
   Description,
   GridContainer,
+  Subtitle,
+  ContainerLogo,
 } from "./style";
-import logo_hidro from "../../../assets/images/logo_hidro.svg";
-import logo_contact from "../../../assets/images/logo_contact.png";
+import logo_footer from "../../../assets/images/logo_footer.png";
+import logo_gps from "../../../assets/images/logo_gps.png";
+import logo_phone from "../../../assets/images/logo_phone.png";
+import logo_email from "../../../assets/images/logo_email.png";
+import logo_cookietec from "../../../assets/images/logo_cookietec.png";
 import { Grid } from "@mui/material";
 
 const Footer = () => {
   return (
     <ContainerFooter>
-      <GridContainer container spacing={3}>
-        <Grid item md={6}>
-          <Image src={logo_hidro} height={50} width={200} />
-          <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
-            nec leo semper malesuada eu eu nibh. In hac habitasse platea
-            dictumst. In a blandit elit, quis lacinia urna.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
-            nec leo semper malesuada eu eu nibh. In hac habitasse platea
-            dictumst. In a blandit elit, quis lacinia urna.
-          </Description>
+      <GridContainer container spacing={4}>
+        <Grid item md={4}>
+          <ContainerLogo>
+            <Image src={logo_footer} />
+            <Description>Todos los derechos reservados &copy;2022</Description>
+          </ContainerLogo>
         </Grid>
-        <Grid item md={6}>
+        <Grid item md={4}>
           <ContainerContact>
-            <Image src={logo_contact} height={25} width={25} />
-            <p>Avenida las flores 456 - paradero 6</p>
+            <Image src={logo_gps} />
+            <p>Lima sede central, portada del sol 722 - Lima 354</p>
           </ContainerContact>
           <ContainerContact>
-            <Image src={logo_contact} height={25} width={25} />
-            <p>Avenida las flores 456 - paradero 6</p>
+            <Image src={logo_phone} />
+            <p>01-7654321</p>
           </ContainerContact>
           <ContainerContact>
-            <Image src={logo_contact} height={25} width={25} />
-            <p>Avenida las flores 456 - paradero 6</p>
+            <Image src={logo_email} />
+            <p>correo@correo.com</p>
           </ContainerContact>
-          <ContainerContact>
-            <Image src={logo_contact} height={25} width={25} />
-            <p>Avenida las flores 456 - paradero 6</p>
-          </ContainerContact>
+        </Grid>
+        <Grid item md={4}>
+          <Subtitle>Desarrollador por</Subtitle>
+          <Image src={logo_cookietec} />
         </Grid>
       </GridContainer>
     </ContainerFooter>

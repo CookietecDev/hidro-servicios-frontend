@@ -20,9 +20,10 @@ export const Text = styled.p`
 
 export const LinkTexT = styled.p`
   font-weight: bold;
-  color: #2f5597;
+  color: #b0afaa;
 
   &:hover {
     cursor: pointer;
+    color: #2f5597;
   }
 `;

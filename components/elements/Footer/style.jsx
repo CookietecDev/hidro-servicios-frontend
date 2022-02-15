@@ -6,28 +6,22 @@ export const ContainerFooter = styled.div`
   width: 100%;
   height: 100%;
   background-color: #35393a;
-  padding: 50px 0px 0px 50px;
+  padding: 20px;
   @media (max-width: 900px) {
-    padding: 10px 0px 0px 10px;
+    padding: 10px 10px 0px 10px;
   }
 `;
 
 export const Description = styled.p`
-  color: #b0b0b0;
-  width: 400px;
-  @media (max-width: 900px) {
-    width: 300px;
-  }
-
-  @media (max-width: 600px) {
-    width: 200px;
-  }
+  color: #ffffff;
+  text-align: center;
 `;
 
 export const ContainerContact = styled.div`
   display: flex;
   align-items: center;
-  color: #b0b0b0;
+  color: #ffffff;
+  padding: 0px 10px;
 `;
 
 export const GridContainer = styledM(Grid)(() => ({
@@ -35,3 +29,16 @@ export const GridContainer = styledM(Grid)(() => ({
   justifyContent: "center",
   alignItems: "center",
 }));
+
+export const Subtitle = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+`;
+
+export const ContainerLogo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;

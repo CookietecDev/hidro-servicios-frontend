@@ -13,7 +13,11 @@ import {
 const CardService = () => {
   return (
     <>
-      <GridContainer container spacing={3}>
+      <GridContainer
+        container
+        spacing={3}
+        className="animate__animated animate__bounceInLeft"
+      >
         <GridCard item md={6}>
           <ContainerCard>
             <ContainerImage>
@@ -39,7 +43,10 @@ const CardService = () => {
         </GridCard>
       </GridContainer>
 
-      <GridContainer container>
+      <GridContainer
+        container
+        className="animate__animated animate__bounceInRight"
+      >
         <GridCard item md={6}>
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
@@ -65,7 +72,10 @@ const CardService = () => {
         </GridCard>
       </GridContainer>
 
-      <GridContainer container>
+      <GridContainer
+        container
+        className="animate__animated animate__bounceInLeft"
+      >
         <GridCard item md={6}>
           <ContainerCard>
             <ContainerImage>

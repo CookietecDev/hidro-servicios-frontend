@@ -13,28 +13,28 @@ const CardsCategories = () => {
     <Container>
       <Title>Categorias</Title>
       <Grid container>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-right">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-right">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-right">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-right">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-left">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-left">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-left">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
-        <GridCard item md={3} sm={6} xs={12} data-aos="fade-left">
+        <GridCard item md={3} sm={6} xs={12} data-aos="fade-down">
           <CardCategory />
         </GridCard>
       </Grid>

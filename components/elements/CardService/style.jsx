@@ -28,19 +28,7 @@ export const ContainerImage = styled.div`
 
 export const Description = styled.p`
   font-size: 20px;
-  width: 500px;
-
-  @media (max-width: 1200px) {
-    width: 320px;
-  }
-
-  @media (max-width: 600px) {
-    width: 300px;
-  }
-
-  @media (max-width: 325px) {
-    width: 200px;
-  }
+  text-align: justify;
 `;
 
 export const GridCard = styledM(Grid)(() => ({

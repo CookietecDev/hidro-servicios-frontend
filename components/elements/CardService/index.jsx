@@ -20,7 +20,7 @@ const CardService = () => {
   return (
     <>
       <GridContainer container spacing={3}>
-        <GridCard item md={6} data-aos="fade-right">
+        <GridCard item md={6} data-aos="zoom-in">
           <ContainerCard>
             <ContainerImage>
               <Image src={logo_services} width={400} height={250} />
@@ -28,7 +28,7 @@ const CardService = () => {
             <CardShadow />
           </ContainerCard>
         </GridCard>
-        <GridCard item md={6} data-aos="fade-left">
+        <GridCard item md={6} data-aos="zoom-in">
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
             nec leo semper malesuada eu eu nibh. In hac habitasse platea
@@ -46,7 +46,7 @@ const CardService = () => {
       </GridContainer>
 
       <GridContainer container>
-        <GridCard item md={6} data-aos="fade-right">
+        <GridCard item md={6} data-aos="zoom-in">
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
             nec leo semper malesuada eu eu nibh. In hac habitasse platea
@@ -61,7 +61,7 @@ const CardService = () => {
             dictumst. In a blandit elit, quis lacinia urna.
           </Description>
         </GridCard>
-        <GridCard item md={6} data-aos="fade-left">
+        <GridCard item md={6} data-aos="zoom-in">
           <ContainerCard>
             <ContainerImage>
               <Image src={logo_services} width={400} height={250} />
@@ -72,7 +72,7 @@ const CardService = () => {
       </GridContainer>
 
       <GridContainer container>
-        <GridCard item md={6} data-aos="fade-right">
+        <GridCard item md={6} data-aos="zoom-in">
           <ContainerCard>
             <ContainerImage>
               <Image src={logo_services} width={400} height={250} />
@@ -80,7 +80,7 @@ const CardService = () => {
             <CardShadow />
           </ContainerCard>
         </GridCard>
-        <GridCard item md={6} data-aos="fade-left">
+        <GridCard item md={6} data-aos="zoom-in">
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
             nec leo semper malesuada eu eu nibh. In hac habitasse platea

@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import React from "react";
 import CardService from "../../elements/CardService";
 import Title from "../../ui/Title";
@@ -8,6 +7,8 @@ const CardsServices = () => {
   return (
     <Container>
       <Title>Servicios</Title>
+      <CardService />
+      <CardService />
       <CardService />
     </Container>
   );

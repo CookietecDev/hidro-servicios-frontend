@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { styled as styledM } from "@mui/material/styles";
-import { Grid } from "@mui/material";
 
 export const CardShadow = styled.div`
   height: 250px;
@@ -31,14 +29,14 @@ export const Description = styled.p`
   text-align: justify;
 `;
 
-export const GridCard = styledM(Grid)(() => ({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-}));
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 
-export const GridContainer = styledM(Grid)(() => ({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;

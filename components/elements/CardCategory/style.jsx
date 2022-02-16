@@ -4,7 +4,7 @@ export const Card = styled.div`
   height: 220px;
   border: 3px solid #b0afaa;
   border-radius: 10px;
-  width: 100%;
+  width: 200px;
   box-shadow: 0px 0px 10px gray;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ export const Card = styled.div`
   margin: 10px;
   @media (max-width: 900px) {
     height: 139px;
-
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: row;

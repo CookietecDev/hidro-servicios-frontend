@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo_services from "../../../assets/images/logo_services.png";
 import Image from "next/image";
 import {
@@ -9,16 +9,18 @@ import {
   GridCard,
   GridContainer,
 } from "./style";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const CardService = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
-      <GridContainer
-        container
-        spacing={3}
-        className="animate__animated animate__bounceInLeft"
-      >
-        <GridCard item md={6}>
+      <GridContainer container spacing={3}>
+        <GridCard item md={6} data-aos="fade-right">
           <ContainerCard>
             <ContainerImage>
               <Image src={logo_services} width={400} height={250} />
@@ -26,7 +28,7 @@ const CardService = () => {
             <CardShadow />
           </ContainerCard>
         </GridCard>
-        <GridCard item md={6}>
+        <GridCard item md={6} data-aos="fade-left">
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
             nec leo semper malesuada eu eu nibh. In hac habitasse platea
@@ -43,11 +45,8 @@ const CardService = () => {
         </GridCard>
       </GridContainer>
 
-      <GridContainer
-        container
-        className="animate__animated animate__bounceInRight"
-      >
-        <GridCard item md={6}>
+      <GridContainer container>
+        <GridCard item md={6} data-aos="fade-right">
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
             nec leo semper malesuada eu eu nibh. In hac habitasse platea
@@ -62,7 +61,7 @@ const CardService = () => {
             dictumst. In a blandit elit, quis lacinia urna.
           </Description>
         </GridCard>
-        <GridCard item md={6}>
+        <GridCard item md={6} data-aos="fade-left">
           <ContainerCard>
             <ContainerImage>
               <Image src={logo_services} width={400} height={250} />
@@ -72,11 +71,8 @@ const CardService = () => {
         </GridCard>
       </GridContainer>
 
-      <GridContainer
-        container
-        className="animate__animated animate__bounceInLeft"
-      >
-        <GridCard item md={6}>
+      <GridContainer container>
+        <GridCard item md={6} data-aos="fade-right">
           <ContainerCard>
             <ContainerImage>
               <Image src={logo_services} width={400} height={250} />
@@ -84,7 +80,7 @@ const CardService = () => {
             <CardShadow />
           </ContainerCard>
         </GridCard>
-        <GridCard item md={6}>
+        <GridCard item md={6} data-aos="fade-left">
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
             nec leo semper malesuada eu eu nibh. In hac habitasse platea

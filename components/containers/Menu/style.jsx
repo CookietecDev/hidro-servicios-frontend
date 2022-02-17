@@ -34,6 +34,7 @@ export const TextItems = styled.p`
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 `;
 
@@ -43,12 +44,19 @@ export const ContainerItems = styled.div`
   align-items: center;
 `;
 
-export const ContainerLogo = styled.div`
+export const ContainerWhatsapp = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 `;
 
-export const Line = styled.div`
-  width: 3px;
-  height: 25px;
-  background-color: #000000;
+export const BtnWhatsapp = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2f5597;
+  color: #ffffff;
+  height: 40px;
+  width: 150px;
 `;

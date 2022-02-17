@@ -8,5 +8,5 @@ export const GridCard = styledM(Grid)(() => ({
 }));
 
 export const Container = styled.div`
-  margin: 40px 40px;
+  margin: 20px 0px;
 `;

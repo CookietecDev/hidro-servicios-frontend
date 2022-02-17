@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Text } from "./style";
 
-const Title = ({ children }) => {
+const MiniCard = ({ children }) => {
   return (
     <Container>
       <Text>{children}</Text>
@@ -9,4 +9,4 @@ const Title = ({ children }) => {
   );
 };
 
-export default Title;
+export default MiniCard;

@@ -1,14 +1,16 @@
 import React from "react";
-import { Card, LinkTexT, Text } from "./style";
+import { Card, Text } from "./style";
 import logo_mineria from "../../../assets/images/logo_mineria.png";
 import Image from "next/image";
-const CardCategory = () => {
+import Link from "next/link";
+const CardCategory = ({ data }) => {
   return (
-    <Card>
-      <Text>Mineria</Text>
-      <Image src={logo_mineria} height={70} width={70} />
-      <LinkTexT>Ver mas</LinkTexT>
-    </Card>
+    <Link href="/categories">
+      <Card>
+        <Text>{data.title}</Text>
+        <Image src={data.image} height={70} width={70} />
+      </Card>
+    </Link>
   );
 };
 

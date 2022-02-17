@@ -1,23 +1,16 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  height: 180px;
-  border: none;
+  height: 220px;
+  border: 3px solid #b0afaa;
   border-radius: 10px;
   width: 200px;
   box-shadow: 0px 0px 10px gray;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  justify-content: space-around;
   margin: 10px;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #95bfe2;
-    color: #ffffff;
-  }
-
   @media (max-width: 900px) {
     height: 139px;
     width: 100%;
@@ -31,4 +24,5 @@ export const Card = styled.div`
 export const Text = styled.p`
   font-weight: bold;
   font-size: 20px;
+  color: #2f5597;
 `;

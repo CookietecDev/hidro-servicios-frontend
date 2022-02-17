@@ -7,6 +7,7 @@ export const ContainerFooter = styled.div`
   height: 100%;
   background-color: #35393a;
   padding: 20px;
+  margin-top: 28px;
   @media (max-width: 900px) {
     padding: 10px 10px 0px 10px;
   }

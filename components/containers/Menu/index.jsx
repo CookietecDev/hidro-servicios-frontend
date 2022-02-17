@@ -8,13 +8,15 @@ import {
   MenuBar,
   Container,
   ContainerItems,
-  ContainerLogo,
+  ContainerWhatsapp,
   ContainerButton,
   Line,
   DrawerMenu,
+  BtnWhatsapp,
 } from "./style";
 import OptionMenu from "../../elements/OptionMenu";
 import logo_hidro from "../../../assets/images/logo_hidro.svg";
+import logo_wsp from "../../../assets/images/logo_wsp.svg";
 import Image from "next/image";
 
 const Menu = (props) => {
@@ -33,16 +35,18 @@ const Menu = (props) => {
         <Toolbar>
           <Hidden mdDown>
             <Container>
-              <ContainerLogo>
-                <Image src={logo_hidro} height={80} width={300} />
-              </ContainerLogo>
               <ContainerItems>
+                <Image src={logo_hidro} />
                 <TextItems>Producto</TextItems>
-                <Line />
                 <TextItems>Nosotros</TextItems>
-                <Line />
                 <TextItems>Contactos</TextItems>
               </ContainerItems>
+              <ContainerWhatsapp>
+                <BtnWhatsapp>
+                  <Image src={logo_wsp} />
+                  <p>Contactanos</p>
+                </BtnWhatsapp>
+              </ContainerWhatsapp>
             </Container>
           </Hidden>
           <Hidden mdUp>

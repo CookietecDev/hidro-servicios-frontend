@@ -16,11 +16,8 @@ import {
   Item,
 } from "./style";
 import OptionMenu from "../../elements/OptionMenu";
-import logo_hidro from "../../../assets/images/logo_hidro.svg";
-import logo_wsp from "../../../assets/images/logo_wsp.svg";
-import Image from "next/image";
 
-const Menu = (props) => {
+const AppBar = (props) => {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -84,4 +81,4 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+export default AppBar;

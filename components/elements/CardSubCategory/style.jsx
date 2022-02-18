@@ -24,5 +24,5 @@ export const Card = styled.div`
 export const Text = styled.p`
   font-weight: bold;
   font-size: 20px;
-  color: #2f5597;
+  color: ${(props) => props.theme.primary};
 `;

@@ -13,7 +13,7 @@ export const Text = styled.h1`
   font-size: 25px;
   font-weight: 600;
   line-height: 56px;
-  color: #ffffff;
+  color: ${(props) => props.theme.default};
   @media (max-width: 600px) {
     font-size: 20px;
   }

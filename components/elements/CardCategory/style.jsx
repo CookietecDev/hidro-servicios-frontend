@@ -15,8 +15,8 @@ export const Card = styled.div`
 
   &:hover {
     cursor: pointer;
-    background-color: #95bfe2;
-    color: #ffffff;
+    background-color: ${(props) => props.theme.secondary};
+    color: ${(props) => props.theme.default};
   }
 
   @media (max-width: 900px) {

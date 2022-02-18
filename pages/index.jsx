@@ -4,12 +4,12 @@ import CardsRepresentations from "../components/containers/CardsRepresentations"
 import CardsServices from "../components/containers/CardsServices";
 import CardContact from "../components/elements/CardContact";
 import Footer from "../components/elements/Footer";
-import SimpleSlider from "../components/elements/Sliders";
+import HomeBanner from "../components/elements/HomeBanner";
 
 const Home = () => {
   return (
     <>
-      <SimpleSlider />
+      <HomeBanner />
       <CardsCategories />
       <CardsServices />
       <CardContact />

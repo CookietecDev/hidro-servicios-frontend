@@ -66,8 +66,8 @@ export const BtnWhatsapp = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #2f5597;
-  color: #ffffff;
+  background-color: ${(props) => props.theme.primary};
+  color: ${(props) => props.theme.default};
   height: 40px;
   width: 150px;
   cursor: pointer;

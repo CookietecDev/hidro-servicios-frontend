@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const ImageContact = styled.img`
   margin-right: 20px;
+  @media (max-width: 600px) {
+    height: 50px;
+  }
 `;
 
 export const Container = styled.div`
-  background-color: #95bfe2;
+  background-color: ${(props) => props.theme.secondary};
   padding: 70px;
-  p {
-    font-size: 50px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: bold;
-    margin: 0;
+
+  @media (max-width: 600px) {
+    padding: 70px 0px;
   }
 `;
 
@@ -35,7 +35,13 @@ export const ContainerImage = styled.div`
 `;
 
 export const TextContact = styled.p`
-  color: #ffffff;
-  font-weight: bold;
   font-size: 50px;
+  text-align: center;
+  color: ${(props) => props.theme.default};
+  font-weight: bold;
+  margin: 0;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
 `;

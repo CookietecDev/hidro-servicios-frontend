@@ -1,5 +1,4 @@
-import React from 'react'
-import Menu from "../components/containers/Menu";
+import React from "react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +8,8 @@ import "aos/dist/aos.css";
 
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-import '../styles/global.css'
+import "../styles/global.css";
+import AppBar from "../components/ui/AppBar";
 
 const SiteApp = (props) => {
   const { Component, pageProps } = props;
@@ -23,10 +23,10 @@ const SiteApp = (props) => {
   `;
 
   const theme = {
-    primary: '#2F5597',
-    secondary: '#95BFE2',
-    text: '#35393A',
-    default: '#FFFFFF'
+    primary: "#2F5597",
+    secondary: "#95BFE2",
+    text: "#35393A",
+    default: "#FFFFFF",
   };
 
   React.useEffect(() => {
@@ -40,7 +40,7 @@ const SiteApp = (props) => {
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Menu />
+        <AppBar />
         <Component {...pageProps} />
       </ThemeProvider>
     </div>
@@ -48,5 +48,3 @@ const SiteApp = (props) => {
 };
 
 export default SiteApp;
-
-

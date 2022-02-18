@@ -18,6 +18,10 @@ export const ContainerMiniCard = styled.div`
   justify-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 export const TitleDescription = styled.p`
@@ -28,6 +32,7 @@ export const TitleDescription = styled.p`
 export const Description = styled.p`
   font-size: 20px;
   text-align: justify;
+  color: ${(props) => props.theme.text};
 `;
 
 export const Container = styled.div`

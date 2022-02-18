@@ -11,7 +11,7 @@ import {
 const CardContact = () => {
   return (
     <Container>
-      <p>Contactanos</p>
+      <TextContact>Contactanos</TextContact>
       <ContainerContact>
         <ContainerImage>
           <ImageContact src={"/images/logo_call.png"} />

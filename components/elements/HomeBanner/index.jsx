@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { Container } from "./style";
+import { Contianer } from "./style";
 
-const Sliders = () => {
+const HomeBanner = () => {
   const settings = {
     dots: true,
     speed: 1000,
@@ -12,7 +12,7 @@ const Sliders = () => {
     arrows: false,
   };
   return (
-    <Container>
+    <Contianer>
       <Slider {...settings}>
         <div>
           <img src={"/images/img_solutions.png"} width="100%" />
@@ -21,8 +21,8 @@ const Sliders = () => {
           <img src={"/images/img_solutions.png"} width="100%" />
         </div>
       </Slider>
-    </Container>
+    </Contianer>
   );
 };
 
-export default Sliders;
+export default HomeBanner;

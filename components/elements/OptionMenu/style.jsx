@@ -8,6 +8,10 @@ export const ListOptions = styledM(List)(() => ({
 export const ListItemMenu = styledM(ListItem)(() => ({
   color: "#2f5597",
   fontWeight: "bold",
+
+  "&:hover": {
+    cursor: "pointer",
+  },
 }));
 
 export const ButtonClose = styledM(IconButton)(() => ({

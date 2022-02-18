@@ -11,31 +11,23 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import MiniCard from "../../ui/MiniCard";
 
-const CardService = () => {
+const CardService = ({ ...item }) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
   return (
     <Container>
-      <ImageService
-        src={"/images/logo_services.png"}
-        width="100%"
-        data-aos="zoom-in"
-      />
+      <ImageService src={item.src} width="100%" data-aos="zoom-in" />
       <ContainerCard data-aos="zoom-in">
-        <TitleDescription>Instalaciones</TitleDescription>
-        <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dui
-          nec leo semper malesuada eu eu nibh. In hac habitasse platea dictumst.
-          In a blandit elit, quis lacinia urna.
-        </Description>
+        <TitleDescription>{item.title}</TitleDescription>
+        <Description>{item.description}</Description>
         <ContainerMiniCard>
-          <MiniCard>Bombas domesticas</MiniCard>
-          <MiniCard>Equipo hidroneumatico</MiniCard>
-          <MiniCard>Equipo de presion constante</MiniCard>
-          <MiniCard>Tableros electricos</MiniCard>
-          <MiniCard>Equipo de presion constante</MiniCard>
+          <MiniCard>{item.item1}</MiniCard>
+          <MiniCard>{item.item2}</MiniCard>
+          <MiniCard>{item.item3}</MiniCard>
+          <MiniCard>{item.item4}</MiniCard>
+          <MiniCard>{item.item5}</MiniCard>
         </ContainerMiniCard>
       </ContainerCard>
     </Container>

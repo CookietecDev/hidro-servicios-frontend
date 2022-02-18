@@ -2,16 +2,16 @@ import React from "react";
 import CardService from "../../elements/CardService";
 import Title from "../../ui/Title";
 import { Container } from "./style";
+import { data } from "./data";
 
 const CardsServices = () => {
   return (
     <>
       <Title>Servicios</Title>
       <Container>
-        <CardService />
-        <CardService />
-        <CardService />
-        <CardService />
+        {data.map((item, index) => (
+          <CardService key={index} {...item} />
+        ))}
       </Container>
     </>
   );

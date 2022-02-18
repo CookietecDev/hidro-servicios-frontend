@@ -11,6 +11,7 @@ export const Card = styled.div`
   align-items: center;
   padding-top: 10px;
   margin: 10px;
+  transition: all 0.3s ease-out;
 
   &:hover {
     cursor: pointer;

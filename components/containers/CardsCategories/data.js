@@ -1,51 +1,34 @@
-import logo_mineria from "../../../assets/images/logo_mineria.png";
-import logo_industria from "../../../assets/images/logo_industria.png";
-import logo_agricultura from "../../../assets/images/logo_agricultura.png";
-import logo_pesca from "../../../assets/images/logo_pesca.png";
-import logo_construccion from "../../../assets/images/logo_construccion.png";
-import logo_electricidad from "../../../assets/images/logo_electricidad.png";
-import logo_agua_municipales from "../../../assets/images/logo_agua_municipales.png";
-import logo_vivienda from "../../../assets/images/logo_vivienda.png";
-
 export const data = [
   {
-    id: "1",
     title: "Mineria",
-    image: logo_mineria,
+    image: '/images/logo_mineria.png',
   },
   {
-    id: "2",
     title: "Industria",
-    image: logo_industria,
+    image: '/images/logo_industria.png',
   },
   {
-    id: "3",
     title: "Agricultura",
-    image: logo_agricultura,
+    image: '/images/logo_agricultura.png',
   },
   {
-    id: "4",
     title: "Pesca",
-    image: logo_pesca,
+    image: '/images/logo_pesca.png',
   },
   {
-    id: "5",
     title: "Construcción",
-    image: logo_construccion,
+    image: '/images/logo_construccion.png',
   },
   {
-    id: "6",
     title: "Electricidad",
-    image: logo_electricidad,
+    image: '/images/logo_electricidad.png',
   },
   {
-    id: "7",
     title: "Agua Municipales",
-    image: logo_agua_municipales,
+    image: '/images/logo_agua_municipales.png',
   },
   {
-    id: "8",
     title: "Vivienda",
-    image: logo_vivienda,
+    image: '/images/logo_vivienda.png',
   },
 ];

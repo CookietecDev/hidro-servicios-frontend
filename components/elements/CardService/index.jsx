@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import logo_services from "../../../assets/images/logo_services.png";
-import Image from "next/image";
 import {
   Container,
   ContainerCard,
   ContainerMiniCard,
   Description,
+  ImageService,
   TitleDescription,
 } from "./style";
 import Aos from "aos";
@@ -19,14 +18,11 @@ const CardService = () => {
 
   return (
     <Container>
-      <div>
-        <Image
-          src={logo_services}
-          width={450}
-          height={300}
-          data-aos="zoom-in"
-        />
-      </div>
+      <ImageService
+        src={"/images/logo_services.png"}
+        width="100%"
+        data-aos="zoom-in"
+      />
       <ContainerCard data-aos="zoom-in">
         <TitleDescription>Instalaciones</TitleDescription>
         <Description>
@@ -35,11 +31,11 @@ const CardService = () => {
           In a blandit elit, quis lacinia urna.
         </Description>
         <ContainerMiniCard>
-          <MiniCard>Equipos contra incendios</MiniCard>
           <MiniCard>Bombas domesticas</MiniCard>
           <MiniCard>Equipo hidroneumatico</MiniCard>
           <MiniCard>Equipo de presion constante</MiniCard>
           <MiniCard>Tableros electricos</MiniCard>
+          <MiniCard>Equipo de presion constante</MiniCard>
         </ContainerMiniCard>
       </ContainerCard>
     </Container>

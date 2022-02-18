@@ -7,6 +7,7 @@ import {
   GridContainer,
   Subtitle,
   ContainerLogo,
+  Contaier,
 } from "./style";
 import logo_footer from "../../../assets/images/logo_footer.png";
 import logo_gps from "../../../assets/images/logo_gps.png";

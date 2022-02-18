@@ -3,7 +3,7 @@ import { styled as styledM } from "@mui/material/styles";
 import { Grid } from "@mui/material";
 
 export const Container = styled.div`
-  padding: 20px 0p;
+  padding: 20px 40px;
 `;
 
 export const GridCard = styledM(Grid)(() => ({

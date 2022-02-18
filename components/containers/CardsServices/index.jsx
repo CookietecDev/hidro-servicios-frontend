@@ -5,13 +5,15 @@ import { Container } from "./style";
 
 const CardsServices = () => {
   return (
-    <Container>
+    <>
       <Title>Servicios</Title>
-      <CardService />
-      <CardService />
-      <CardService />
-      <CardService />
-    </Container>
+      <Container>
+        <CardService />
+        <CardService />
+        <CardService />
+        <CardService />
+      </Container>
+    </>
   );
 };
 

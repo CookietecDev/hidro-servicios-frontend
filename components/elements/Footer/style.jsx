@@ -2,15 +2,8 @@ import styled from "styled-components";
 import { styled as styledM } from "@mui/material/styles";
 import { Grid } from "@mui/material";
 
-export const ContainerFooter = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: #35393a;
-  padding: 20px;
-  margin-top: 28px;
-  @media (max-width: 900px) {
-    padding: 10px 10px 0px 10px;
-  }
+export const ContainerFooter = styled.footer`
+  background: #000000;
 `;
 
 export const Description = styled.p`
@@ -42,4 +35,8 @@ export const ContainerLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Contaier = styled.div`
+  background: ${(props) => props.theme.primary} !important;
 `;

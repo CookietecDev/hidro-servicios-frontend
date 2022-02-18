@@ -1,4 +1,3 @@
-import logo_pedrollo from "../../../assets/images/logo_pedrollo.png";
 import logo_simiens from "../../../assets/images/logo_simiens.png";
 import logo_hidrostal from "../../../assets/images/logo_hidrostal.png";
 import logo_epsa from "../../../assets/images/logo_epsa.png";
@@ -10,7 +9,7 @@ import logo_weg from "../../../assets/images/logo_weg.png";
 export const data = [
   {
     id: 1,
-    src: logo_pedrollo,
+    src: '/images/logo_pedrollo.png',
   },
   {
     id: 2,

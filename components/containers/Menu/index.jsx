@@ -13,6 +13,7 @@ import {
   Line,
   DrawerMenu,
   BtnWhatsapp,
+  Item,
 } from "./style";
 import OptionMenu from "../../elements/OptionMenu";
 import logo_hidro from "../../../assets/images/logo_hidro.svg";
@@ -30,54 +31,56 @@ const Menu = (props) => {
   const container =
     window !== undefined ? () => window().document.body : undefined;
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <>
       <MenuBar position="relative">
-        <Toolbar>
-          <Hidden mdDown>
-            <Container>
-              <ContainerItems>
-                <Image src={logo_hidro} />
+        <Hidden mdDown>
+          <Container>
+            <img src={"/images/logo_hidro.png"} />
+            <ContainerItems>
+              <Item>
                 <TextItems>Producto</TextItems>
+              </Item>
+              <Item>
                 <TextItems>Nosotros</TextItems>
-                <TextItems>Contactos</TextItems>
-              </ContainerItems>
-              <ContainerWhatsapp>
-                <BtnWhatsapp>
-                  <Image src={logo_wsp} />
-                  <p>Contactanos</p>
-                </BtnWhatsapp>
-              </ContainerWhatsapp>
-            </Container>
-          </Hidden>
-          <Hidden mdUp>
-            <ContainerButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-              onClick={handleDrawerToggle}
-            >
-              <MenuIcon />
-            </ContainerButton>
-          </Hidden>
-        </Toolbar>
+              </Item>
+              <Item>
+                <TextItems>Contacto</TextItems>
+              </Item>
+            </ContainerItems>
+            <ContainerWhatsapp>
+              <BtnWhatsapp>
+                <img src={"/images/logo_wsp.svg"} />
+                <p>Contactanos</p>
+              </BtnWhatsapp>
+            </ContainerWhatsapp>
+          </Container>
+        </Hidden>
+        <Hidden mdUp>
+          <ContainerButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+            onClick={handleDrawerToggle}
+          >
+            <MenuIcon />
+          </ContainerButton>
+        </Hidden>
       </MenuBar>
-      <Box component="nav">
-        <DrawerMenu
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          anchor="right"
-        >
-          <OptionMenu onClick={handleDrawerToggle} close={handleDrawerToggle} />
-        </DrawerMenu>
-      </Box>
-    </Box>
+      <DrawerMenu
+        container={container}
+        variant="temporary"
+        open={mobileOpen}
+        onClose={handleDrawerToggle}
+        ModalProps={{
+          keepMounted: true,
+        }}
+        anchor="right"
+      >
+        <OptionMenu onClick={handleDrawerToggle} close={handleDrawerToggle} />
+      </DrawerMenu>
+    </>
   );
 };
 

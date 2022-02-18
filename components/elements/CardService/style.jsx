@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const ImageService = styled.img`
+  width: 80%;
+  @media (max-width: 780px) {
+    width: 100%;
+  }
+`;
+
 export const ContainerCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,17 +14,10 @@ export const ContainerCard = styled.div`
 `;
 
 export const ContainerMiniCard = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
   width: 100%;
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
+  flex-wrap: wrap;
 `;
 
 export const TitleDescription = styled.p`
@@ -34,8 +34,8 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 40px 40px;
-
+  max-width: 1650px;
+  margin: 60px auto;
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;

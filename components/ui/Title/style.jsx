@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 400px;
   height: 60px;
-  background: #2f5597;
-  margin-bottom: 15px;
+  background: ${(props) => props.theme.primary};
+  margin: 15px 0px;
   padding: 0px 30px;
   display: flex;
   align-items: center;

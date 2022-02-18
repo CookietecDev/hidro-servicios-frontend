@@ -5,6 +5,8 @@ import styled from "styled-components";
 export const MenuBar = styledM(AppBar)(() => ({
   backgroundColor: "#FFFFFF",
   color: "#000000",
+  padding: "1px 40px",
+  height: "70px",
 }));
 
 export const ContainerButton = styledM(IconButton)(() => ({
@@ -22,13 +24,9 @@ export const DrawerMenu = styledM(Drawer)(() => ({
 }));
 
 export const TextItems = styled.p`
-  color: #2f5597;
+  color: ${(props) => props.theme.primary};
   font-weight: bold;
   margin: 0px 30px;
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const Container = styled.div`
@@ -42,6 +40,19 @@ export const ContainerItems = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 70px;
+`;
+
+export const Item = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 0px solid ${(props) => props.theme.primary};
+  transition: all 0.1s ease-out;
+  &:hover {
+    cursor: pointer;
+    border-top: 2px solid ${(props) => props.theme.primary};
+  }
 `;
 
 export const ContainerWhatsapp = styled.div`
@@ -59,4 +70,5 @@ export const BtnWhatsapp = styled.div`
   color: #ffffff;
   height: 40px;
   width: 150px;
+  cursor: pointer;
 `;

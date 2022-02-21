@@ -16,6 +16,6 @@ export const Text = styled.h1`
   font-weight: bold;
   color: ${(props) => props.theme.default};
   @media (max-width: 600px) {
-    font-size: 20px;
+    font-size: 12px;
   }
 `;

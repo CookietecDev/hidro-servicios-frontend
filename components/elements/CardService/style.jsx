@@ -33,6 +33,9 @@ export const Description = styled.p`
   font-size: 20px;
   text-align: justify;
   color: ${(props) => props.theme.text};
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
 `;
 
 export const Container = styled.div`

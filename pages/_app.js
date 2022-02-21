@@ -16,7 +16,7 @@ const SiteApp = (props) => {
 
   const GlobalStyle = createGlobalStyle`
      body {
-      font-family: 'Raleway', sans-serif !important;
+      font-family: 'Red Hat Display', sans-serif!important;
       padding: 0;
       margin: 0;
     }

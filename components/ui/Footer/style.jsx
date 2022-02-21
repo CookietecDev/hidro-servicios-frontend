@@ -4,6 +4,7 @@ import { Grid } from "@mui/material";
 
 export const ContainerFooter = styled.footer`
   background: ${(props) => props.theme.text};
+  padding-bottom: 20px;
 `;
 
 export const Description = styled.p`

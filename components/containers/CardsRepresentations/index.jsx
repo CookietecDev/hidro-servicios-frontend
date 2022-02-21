@@ -1,13 +1,13 @@
 import React from "react";
-import RepresentBanner from "../../elements/RepresentBanner";
+import BannerRepresent from "../../elements/BannerRepresent";
 import Title from "../../ui/Title";
-import { Container, GridCard } from "./style";
+import { Container } from "./style";
 
 const CardsRepresentations = () => {
   return (
     <Container>
       <Title>Representaciones</Title>
-      <RepresentBanner />
+      <BannerRepresent />
     </Container>
   );
 };

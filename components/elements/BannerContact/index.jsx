@@ -8,7 +8,7 @@ import {
   TextContact,
 } from "./style";
 
-const CardContact = () => {
+const BannerContact = () => {
   return (
     <Container>
       <TextContact>Contactanos</TextContact>
@@ -30,4 +30,4 @@ const CardContact = () => {
   );
 };
 
-export default CardContact;
+export default BannerContact;

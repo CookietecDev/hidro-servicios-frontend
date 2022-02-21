@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { data } from "./data";
 import { Container, ContainerSlider } from "./style.";
 
-const RepresentBanner = ({ ...item }) => {
+const BannerRepresent = ({ ...item }) => {
   const settings = {
     dots: true,
     speed: 1000,
@@ -43,4 +43,4 @@ const RepresentBanner = ({ ...item }) => {
   );
 };
 
-export default RepresentBanner;
+export default BannerRepresent;

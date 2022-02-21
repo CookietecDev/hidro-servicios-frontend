@@ -1,18 +1,18 @@
 import React from "react";
 import CardsCategories from "../components/containers/CardsCategories";
-import CardsRepresentations from "../components/containers/CardsRepresentations";
 import CardsServices from "../components/containers/CardsServices";
-import CardContact from "../components/elements/CardContact";
+import BannerContact from "../components/elements/BannerContact";
+import CardsRepresentations from "../components/containers/CardsRepresentations/index";
 import Footer from "../components/elements/Footer";
-import HomeBanner from "../components/elements/HomeBanner";
+import BannerHome from "../components/elements/BannerHome";
 
 const Home = () => {
   return (
     <>
-      <HomeBanner />
+      <BannerHome />
       <CardsCategories />
       <CardsServices />
-      <CardContact />
+      <BannerContact />
       <CardsRepresentations />
       <Footer />
     </>

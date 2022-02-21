@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { Contianer } from "./style";
 
-const HomeBanner = () => {
+const BannerHome = () => {
   const settings = {
     dots: true,
     speed: 1000,
@@ -25,4 +25,4 @@ const HomeBanner = () => {
   );
 };
 
-export default HomeBanner;
+export default BannerHome;

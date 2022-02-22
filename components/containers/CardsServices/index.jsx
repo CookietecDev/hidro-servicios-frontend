@@ -2,9 +2,8 @@ import React from "react";
 import CardService from "../../elements/CardService";
 import Title from "../../ui/Title";
 import { Container } from "./style";
-import { data } from "./data";
 
-const CardsServices = () => {
+const CardsServices = ({ data }) => {
   return (
     <>
       <Title>Servicios</Title>

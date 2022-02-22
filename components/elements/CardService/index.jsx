@@ -18,16 +18,14 @@ const CardService = ({ ...item }) => {
 
   return (
     <Container>
-      <ImageService src={item.src} width="100%" data-aos="zoom-in" />
+      <ImageService src={item.image} width="100%" data-aos="zoom-in" />
       <ContainerCard data-aos="zoom-in">
-        <TitleDescription>{item.title}</TitleDescription>
+        <TitleDescription>{item.name}</TitleDescription>
         <Description>{item.description}</Description>
         <ContainerMiniCard>
-          <MiniCard>{item.item1}</MiniCard>
-          <MiniCard>{item.item2}</MiniCard>
-          <MiniCard>{item.item3}</MiniCard>
-          <MiniCard>{item.item4}</MiniCard>
-          <MiniCard>{item.item5}</MiniCard>
+          {item.specs?.map((item, index) => (
+            <MiniCard key={index}>{item}</MiniCard>
+          ))}
         </ContainerMiniCard>
       </ContainerCard>
     </Container>

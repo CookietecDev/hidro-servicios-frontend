@@ -6,7 +6,11 @@ import CardsRepresentations from "../components/containers/CardsRepresentations/
 import Footer from "../components/ui/Footer";
 import BannerHome from "../components/elements/BannerHome";
 
-const Home = () => {
+import { ServicesService } from "../services/Services";
+
+const Home = ({ dataServices }) => {
+  console.log(dataServices);
+
   return (
     <>
       <BannerHome />
@@ -18,5 +22,16 @@ const Home = () => {
     </>
   );
 };
+
+export async function getStaticProps() {
+  const [dataServices] = await Promise.all([ServicesService.getServices()]);
+
+  return {
+    props: {
+      dataServices,
+    },
+    revalidate: 60, // In seconds
+  };
+}
 
 export default Home;

@@ -2,11 +2,11 @@ import { http } from "../data/http";
 
 const url = process.env.URL_STRAPI;
 
-export const CategoriesService = {
-    getCategories: async () => {
+export const ServicesService = {
+    getServices: async () => {
         try {
             return await http
-                .get(`${url}/categorias`)
+                .get(`${url}/servicios`)
                 .then((res) => {
                     return res;
                 })
@@ -15,7 +15,7 @@ export const CategoriesService = {
                 });
         } catch (err) {
             // console.log(err);
-            throw Error("Error al obtener getCategories");
+            throw Error("Error al obtener getServices");
         }
     },
 };

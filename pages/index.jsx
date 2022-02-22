@@ -9,8 +9,15 @@ import BannerHome from "../components/elements/BannerHome";
 import { ServicesService } from "../services/Services";
 import { getServices } from "../helpers/Services";
 import { CategoriesService } from "../services/Categories";
+import { PromotionsService } from "../services/Promotions";
+import { RepresentationsService } from "../services/Representations";
 
-const Home = ({ dataServices, dataCategories }) => {
+const Home = ({
+  dataServices,
+  dataCategories,
+  dataPromotions,
+  dataRepresentations,
+}) => {
   const services = getServices(dataServices);
   return (
     <>
@@ -25,15 +32,20 @@ const Home = ({ dataServices, dataCategories }) => {
 };
 
 export async function getStaticProps() {
-  const [dataServices, dataCategories] = await Promise.all([
-    ServicesService.getServices(),
-    CategoriesService.getCategories(),
-  ]);
+  const [dataServices, dataCategories, dataPromotions, dataRepresentations] =
+    await Promise.all([
+      ServicesService.getServices(),
+      CategoriesService.getCategories(),
+      PromotionsService.getPromotions(),
+      RepresentationsService.getRepresentaciones(),
+    ]);
 
   return {
     props: {
       dataServices,
       dataCategories,
+      dataPromotions,
+      dataRepresentations,
     },
     revalidate: 60, // In seconds
   };

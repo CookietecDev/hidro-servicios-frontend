@@ -5,7 +5,6 @@ import BannerContact from "../components/elements/BannerContact";
 import CardsRepresentations from "../components/containers/CardsRepresentations/index";
 import Footer from "../components/ui/Footer";
 import BannerHome from "../components/elements/BannerHome";
-
 import { ServicesService } from "../services/Services";
 import { getServices } from "../helpers/Services";
 import { CategoriesService } from "../services/Categories";
@@ -25,7 +24,7 @@ const Home = ({
   const representations = getRepresentation(dataRepresentations);
   const categories = getCategories(dataCategories);
   const promotions = getPromotions(dataPromotions);
-  console.log(promotions);
+
   return (
     <>
       <BannerHome data={promotions} />

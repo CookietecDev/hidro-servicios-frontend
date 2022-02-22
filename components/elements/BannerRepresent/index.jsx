@@ -34,7 +34,7 @@ const BannerRepresent = ({ data }) => {
       <Slider {...settings}>
         {data.map((item, index) => (
           <ContainerSlider key={index}>
-            <img src={item.src} />
+            <img src={item.image} />
           </ContainerSlider>
         ))}
       </Slider>

@@ -11,6 +11,9 @@ import { getServices } from "../helpers/Services";
 import { CategoriesService } from "../services/Categories";
 import { PromotionsService } from "../services/Promotions";
 import { RepresentationsService } from "../services/Representations";
+import { getRepresentation } from "../helpers/Representation";
+import { getCategories } from "../helpers/Categories";
+import { getPromotions } from "../helpers/Promotions";
 
 const Home = ({
   dataServices,
@@ -19,13 +22,17 @@ const Home = ({
   dataRepresentations,
 }) => {
   const services = getServices(dataServices);
+  const representations = getRepresentation(dataRepresentations);
+  const categories = getCategories(dataCategories);
+  const promotions = getPromotions(dataPromotions);
+  console.log(promotions);
   return (
     <>
-      <BannerHome />
-      <CardsCategories />
+      <BannerHome data={promotions} />
+      <CardsCategories data={categories} />
       <CardsServices data={services} />
       <BannerContact />
-      <CardsRepresentations />
+      <CardsRepresentations data={representations} />
       <Footer />
     </>
   );

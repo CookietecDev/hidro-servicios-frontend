@@ -1,12 +1,10 @@
 import { Grid } from "@mui/material";
-import React, { useEffect } from "react";
+import React from "react";
 import CardCategory from "../../elements/CardCategory";
 import Title from "../../ui/Title";
 import { Container, GridCard } from "./style";
 
-import { data } from "./data";
-
-const CardsCategories = () => {
+const CardsCategories = ({ data }) => {
   return (
     <>
       <Title>Categorias</Title>

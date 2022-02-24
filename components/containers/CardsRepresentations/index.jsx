@@ -3,11 +3,11 @@ import BannerRepresent from "../../elements/BannerRepresent";
 import Title from "../../ui/Title";
 import { Container } from "./style";
 
-const CardsRepresentations = () => {
+const CardsRepresentations = ({ data }) => {
   return (
     <Container>
       <Title>Representaciones</Title>
-      <BannerRepresent />
+      <BannerRepresent data={data} />
     </Container>
   );
 };

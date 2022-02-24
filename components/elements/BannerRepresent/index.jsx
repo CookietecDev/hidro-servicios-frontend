@@ -1,9 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import { data } from "./data";
 import { Container, ContainerSlider } from "./style.";
 
-const BannerRepresent = ({ ...item }) => {
+const BannerRepresent = ({ data }) => {
   const settings = {
     dots: true,
     speed: 1000,
@@ -35,7 +34,7 @@ const BannerRepresent = ({ ...item }) => {
       <Slider {...settings}>
         {data.map((item, index) => (
           <ContainerSlider key={index}>
-            <img src={item.src} />
+            <img src={item.image} />
           </ContainerSlider>
         ))}
       </Slider>

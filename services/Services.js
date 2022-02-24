@@ -11,7 +11,7 @@ export const ServicesService = {
                     return res;
                 })
                 .catch((ex) => {
-                    return {};
+                    return [];
                 });
         } catch (err) {
             // console.log(err);

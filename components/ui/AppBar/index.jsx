@@ -1,6 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
+import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Hidden } from "@mui/material";
 import {
@@ -38,10 +37,14 @@ const AppBar = (props) => {
                 <TextItems>Producto</TextItems>
               </Item>
               <Item>
-                <TextItems>Nosotros</TextItems>
+                <Link href="/nosotros">
+                  <TextItems>Nosotros</TextItems>
+                </Link>
               </Item>
               <Item>
-                <TextItems>Contacto</TextItems>
+                <Link href="/contactos">
+                  <TextItems>Contacto</TextItems>
+                </Link>
               </Item>
             </ContainerItems>
             <ContainerWhatsapp>
